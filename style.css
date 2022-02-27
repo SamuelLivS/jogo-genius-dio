@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(208, 255, 239);
+}
+
+.shadow {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: rgb(98, 255, 255);
+}
+
+.sections-modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+    border: none;
+}
+
+input[type="text"]{
+    color: rgb(98, 255, 255);
+    background: transparent;
+    border-bottom: 1px solid rgb(98, 255, 255);
+}
+
+input[type="text"]::placeholder{
+    color: rgb(98, 255, 255);
+}
+
+button {
+    border-radius: 5px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(98, 255, 255);
+    border: 1px solid rgb(98, 255, 255);
+    transition: 200ms;
+}
+
+button:hover{
+    background-color: transparent;
+    color: rgb(98, 255, 255);
+}
+
+.ranking-div {
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas:
+        'green red'
+        'yellow blue';
+    gap: 10px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.genius div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: red;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: green;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.7;
+}
+
+
+@media (max-width:550px) {
+    .genius {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}

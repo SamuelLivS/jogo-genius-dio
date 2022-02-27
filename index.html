@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="chromatic.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Genis.DIO</title>
+</head>
+
+<body>
+
+    <div class="main-game">
+        <div class="genius">
+            <div class="blue">
+                <p class="c-blind d-none">AZUL</p>
+            </div>
+            <div class="yellow">
+                <p class="c-blind d-none">AMARELO</p>
+            </div>
+            <div class="red">
+                <p class="c-blind d-none">VERMELHO</p>
+            </div>
+            <div class="green">
+                <p class="c-blind d-none">VERDE</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="shadow">
+        <section class="modal">
+            <h1>Genius.DIO</h1>
+            <section class="sections-modal username-div">
+                <input type="text" id="username" placeholder="Username">
+                <button onclick="play()">Jogar</button>
+                <div>
+                    <input type="checkbox" id="color-blind">
+                    <label for="color-blind">Daltônico</label>
+                </div>
+                <button onclick="openOrClose()">Ranking</button>
+            </section>
+            <section class="sections-modal ranking-div d-none">
+                <h2>Ranking</h2>
+                <div id="scores-view">
+                </div>
+                <button onclick="openOrClose()">Voltar</button>
+            </section>
+        </section>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
